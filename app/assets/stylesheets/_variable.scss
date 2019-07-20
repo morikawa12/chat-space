@@ -1,0 +1,17 @@
+$white: #fff;   
+$blue:#253141;
+$light_gray:#999999;
+$light_blue:#38AEF0;
+$black:#434a54;
+
+@mixin font{
+font-size: 16px;
+}
+
+@mixin width{
+width: 300px;
+}
+
+@mixin height{
+  height:100px;
+  }
