@@ -1,13 +1,7 @@
 .side-buttom
- .side-buttom__name
-  test-group
- .side-buttom__message
-  さようなら
- .side-buttom__name
-  sample-group
- .side-buttom__message
-  hello! 
- .side-buttom__name
-  example
- .side-buttom__message
-  まだメッセージはありません  
+ - current_user.groups.each do |group|
+  = link_to group_messages_path(group) do
+   .side-buttom__name
+    = group.name
+   .side-buttom__message
+    メッセージはまだありません。

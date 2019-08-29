@@ -26,7 +26,7 @@
   .side-topr{
     background-color: $blue;
     @include height;
-    width: 63%;
+    width: 76%;
     display: inline-block;
     @include font;
     font-weight: bold;
@@ -126,7 +126,7 @@
     background-color: $white;
       float: left;
       height: 50px;
-      width: 620px;
+      width: 900px;
       padding-right: 10px;
       display: flex; 
       &__text{
