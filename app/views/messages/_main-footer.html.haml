@@ -1,9 +1,13 @@
 .main-footer
- .main-footerin
-  .main-footerl
-   .main-footerl__text
-    type a message 
-   .main-footerl__icon
-    = fa_icon 'image'
- .main-footerr
-  Send
+  = form_for [@group, @message] do |f|
+    .main-footerin
+      .main-footerl
+        .main-footerl__text
+        = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+        .main-footerl__icon
+        = f.label :image, class: 'form__mask__image'do
+          = fa_icon 'picture-o', class: 'icon'
+        = f.file_field :image, class: 'hidden'
+    .main-footerr
+      = f.submit 'Send', class: 'form__submit' 
+ 

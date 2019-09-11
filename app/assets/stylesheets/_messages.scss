@@ -69,7 +69,10 @@
   &__topmessage{
     color:$light_gray;
     font-size:12px;
-    margin-top:15px; 
+    margin-top:15px;
+    list-style: none; 
+    display: flex;
+    margin-left: 0.3rem;
   }
   }
  }
@@ -110,7 +113,7 @@
   &__message{
     color: $black;
     font-size: 14px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
   }
  }
@@ -128,18 +131,22 @@
       height: 50px;
       width: 900px;
       padding-right: 10px;
-      display: flex; 
+      display: flex;
       &__text{
       color:$black;
       @include font;
       text-align:left;
       line-height: 50px;
       padding: 0 10px;
-     } 
-     &__icon{
+      } 
+      &__icon{
       line-height: 50px;
       padding: 0 10px 0 427px;
       margin-left: auto;
+      // display: none; 
+      } 
+      .hidden{
+      display: none;  
       }
    }
     .main-footerr{
