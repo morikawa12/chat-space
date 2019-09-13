@@ -70,6 +70,8 @@
     color:$light_gray;
     font-size:12px;
     margin-top:15px; 
+    list-style: none;
+    display: flex;
   }
   }
  }
@@ -141,8 +143,11 @@
       line-height: 50px;
       padding: 0 10px 0 427px;
       margin-left: auto;
+     }
+     .hidden {
+       display: none;
       }
-   }
+    }
     .main-footerr{
     background-color: $light_blue;
       border: none;

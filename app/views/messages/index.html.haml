@@ -3,8 +3,9 @@
   = render partial: "side-top"
   = render partial: "side-buttom"
  .main
-  = render partial: "main-top"
-  = render @messages
+  = render partial: "main-top", locals: {group:@group}
+  .main-body
+   = render @messages
   = render partial: "main-footer"
      
 
