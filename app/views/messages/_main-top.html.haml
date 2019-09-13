@@ -1,9 +1,11 @@
 .main-top
- .main-topl
-  .main-topl__topname
-   test-group
-  .main-topl__topmessage
-   Member:test-group
- .main-topr
-  .main-topr__toptext
-   Edit
+  .main-topl
+    .main-topl__topname
+      = @group.name
+    .main-topl__topmessage
+      Member:
+      - @group.users.each do |user|
+        %li.main-header__left-box__member-list__member= user.name
+  .main-topr
+    .main-topr__toptext
+      = link_to "Edit", edit_group_path(params[:group_id]), method: :get
