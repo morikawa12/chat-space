@@ -94,6 +94,7 @@
   background-color: #fafafa;
   overflow: scroll;
   padding:46px 40px;
+  width: 100%;
   .main-bodyin{
     padding-bottom: 40px;
    &__box{
@@ -129,24 +130,27 @@
     background-color: $white;
       float: left;
       height: 50px;
-      width: 900px;
+      width: 1635px;
       padding-right: 10px;
       display: flex; 
-      &__text{
+    //  &__text{
+     .form__message{ 
+      border-style: none;  
       color:$black;
       @include font;
       text-align:left;
       line-height: 50px;
       padding: 0 10px;
+      width: 100%;
      } 
-     &__icon{
-      line-height: 50px;
-      padding: 0 10px 0 427px;
-      margin-left: auto;
+      &__icon{
+       line-height: 50px;
+       padding: 0 10px 0 427px;
+       margin-left: auto;
+       .hidden {
+        display: none;
+       }
      }
-     .hidden {
-       display: none;
-      }
     }
     .main-footerr{
     background-color: $light_blue;
@@ -160,4 +164,4 @@
       padding: 0 30px;  
    }
   }
- }
+}
