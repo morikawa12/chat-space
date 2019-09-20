@@ -18,12 +18,7 @@ $(function(){
     </div>
     <img src=${message.image} >
   </div>`
- } else {
- </p>
- </div>  
- </div> `
  return html;
-  };
 }
   $('#new_comment').on('submit', function(e){
     e.preventDefault();
