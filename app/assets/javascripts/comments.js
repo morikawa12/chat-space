@@ -1,6 +1,6 @@
 $(function(){
   function buildHTML(message){ 
-    if ( message.image ) {
+    image = ( message.image ) ? `<img class= "lower-message__image" src=${message.image} >` : ""; 
     var html = 
     `<div class="maim-bodyin" data-message-id= "${message.id}">
        <div class="main-bodyin__box">
@@ -18,7 +18,7 @@ $(function(){
     </div>
     <img src=${message.image} >
   </div>`
- return html;
+    return html;
 }
   $('#new_comment').on('submit', function(e){
     e.preventDefault();
