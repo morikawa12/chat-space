@@ -73,6 +73,12 @@
     list-style: none;
     display: flex;
   }
+  &__topmember {
+    font-size: 12px;
+    color:$light_gray;
+    margin-left: 0.3rem;
+    display:inline-block;
+  }    
   }
  }
   .main-topr{
