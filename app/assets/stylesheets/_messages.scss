@@ -94,7 +94,6 @@
   }
  }
   .main-body{
-  // .message{
   height:calc(100vh - 190px);
   box-sizing:border-box;
   background-color: #fafafa;
@@ -136,10 +135,9 @@
     background-color: $white;
       float: left;
       height: 50px;
-      width: 1635px;
+      width: calc(100vw - 300px - 220px);
       padding-right: 10px;
-      display: flex; 
-    //  &__text{
+      display: flex;
      .form__message{ 
       border-style: none;  
       color:$black;
@@ -151,7 +149,7 @@
      } 
       &__icon{
        line-height: 50px;
-       padding: 0 10px 0 427px;
+       padding: 0 10px 0 10px;
        margin-left: auto;
        .hidden {
         display: none;
@@ -159,7 +157,7 @@
      }
     }
     .main-footerr{
-    background-color: $light_blue;
+      background-color: $light_blue;
       border: none;
       color: $white;
       float: right;
@@ -168,6 +166,11 @@
       line-height:50px;
       margin-left: 15px;
       padding: 0 30px;  
-   }
+    }
+      .form__submit{
+        background-color: #38AEF0;
+        color: white;
+        border: none;
+      }
   }
 }
