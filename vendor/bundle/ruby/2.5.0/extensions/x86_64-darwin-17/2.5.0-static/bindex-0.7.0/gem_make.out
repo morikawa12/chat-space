@@ -1,0 +1,15 @@
+current directory: /Users/morikawaka/projects/chat-space/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
+/Users/morikawaka/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20191019-17423-ov54ps.rb extconf.rb
+creating Makefile
+
+current directory: /Users/morikawaka/projects/chat-space/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/morikawaka/projects/chat-space/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/cruby.bundle
+
+current directory: /Users/morikawaka/projects/chat-space/vendor/bundle/ruby/2.5.0/gems/bindex-0.7.0/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20191019-17423-10kuvcl/skiptrace
